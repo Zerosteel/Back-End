@@ -2,15 +2,23 @@ GET http://localhost:3000/clientes
 
 ###
 
+GET http://localhost:3000/clientes/60da580849bc133938f89970
+###
+
+
+
 POST http://localhost:3000/clientes
 Content-Type: application/json
 
 {
-    "nombre":"Exacolor",
-    "rfc":"EXA49TO105"
+    "nombre":"pARKER",
+    "rfc":"pk105SEP12",
+    "direccion":"104 CAMINO DLE CAMPO"
+
 }
 
 ###
 
-DELETE http://localhost:3000/clientes
-Content-Type: application/json
+DELETE http://localhost:3000/clientes/60da580849bc133938f89970
+
+
