@@ -9,7 +9,19 @@ const clientesSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    direccion:String
+    direccion:{
+        type:String,
+        required:true
+    },
+    telefono:{
+        type:String,
+        required:true
+    }, 
+    contacto:{
+        type:String,
+        required:true
+    }, 
+    correo_contacto:String
 })
 
 module.exports = mongoose.model('Clientes',clientesSchema)

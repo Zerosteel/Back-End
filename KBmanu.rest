@@ -2,23 +2,37 @@ GET http://localhost:3000/clientes
 
 ###
 
-GET http://localhost:3000/clientes/60da580849bc133938f89970
+GET http://localhost:3000/inventario
+
 ###
 
+DELETE http://localhost:3000/clientes/60db8e85fcb98c23643710aa
 
+###
 
+GET http://localhost:3000/clientes/60da580849bc133938f89970
+
+###
 POST http://localhost:3000/clientes
 Content-Type: application/json
 
 {
-    "nombre":"pARKER",
-    "rfc":"pk105SEP12",
-    "direccion":"104 CAMINO DLE CAMPO"
+    "nombre":"PuroConejoAsiatico",
+    "rfc":"ARG12039KIEJ",
+    "direccion":"NO SE DONDE ESTOY TOY CHIQUITO",
+    "telefono":"99999 la colita se te mueve",
+    "contacto":"el palancas le dicen",
+    "correo_contacto":"elPalancas@bienparado.com"
+}
+###
+POST http://localhost:3000/inventario
+Content-Type: application/json
 
+{
+    "nombre":"Lamina",
+    "descripcion":"calibre 14",
+    "cantidad":12
 }
 
-###
-
-DELETE http://localhost:3000/clientes/60da580849bc133938f89970
 
 

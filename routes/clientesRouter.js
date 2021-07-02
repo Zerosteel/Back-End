@@ -1,6 +1,6 @@
 const express = require ('express')
 const router = express.Router()
-const Clientes = require ( '../models/clientes')
+const Clientes = require ( '../models/clientesModel')
 
 router.get('/', async (req,res)=> {
      try {
@@ -19,7 +19,10 @@ router.post('/', async (req,res) =>{
  const  cliente = new Clientes({
     nombre:req.body.nombre,
     rfc:req.body.rfc,
-    direccion:req.body.direccion
+    direccion:req.body.direccion,
+    telefono:req.body.telefono,
+    contacto:req.body.contacto,
+    correo_contacto:req.body.correo_contacto
  })
  try{
      const newCliente = await cliente.save()
