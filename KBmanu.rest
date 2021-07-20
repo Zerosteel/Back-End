@@ -35,4 +35,32 @@ Content-Type: application/json
 }
 
 
+###
+POST http://localhost:3000/api/comidas
+Content-Type: application/json
 
+{
+    "nombre":"Manzana",
+    "cantidad":105
+}
+
+###
+GET http://localhost:3000/api/comidas
+
+###
+POST http://localhost:3000/api/ordenesCompra
+Content-Type: application/json
+
+{
+    "line":225544,
+    "partNumber":16698,
+    "description":"dos cuyos",
+    "deliveryDateTime":"un dia no muy lejano",
+    "quantity":9999,
+    
+    "unitPrice":234.21,
+    "amount":39
+}
+
+###
+GET http://localhost:3000/api/ordenesCompra

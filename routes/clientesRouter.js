@@ -17,12 +17,12 @@ router.get('/:id',getCliente,(req,res)=>{
 
 router.post('/', async (req,res) =>{
  const  cliente = new Clientes({
-    nombre:req.body.nombre,
-    rfc:req.body.rfc,
-    direccion:req.body.direccion,
-    telefono:req.body.telefono,
-    contacto:req.body.contacto,
-    correo_contacto:req.body.correo_contacto
+    nombre:          req.body.nombre,
+    rfc:             req.body.rfc,
+    direccion:       req.body.direccion,
+    telefono:        req.body.telefono,
+    contacto:        req.body.contacto,
+    correo_contacto: req.body.correo_contacto
  })
  try{
      const newCliente = await cliente.save()

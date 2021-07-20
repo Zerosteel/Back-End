@@ -12,6 +12,10 @@ const inventarioSchema = new mongoose.Schema({
     cantidad:{
         type:Number,
         required:true
+    },
+    material:{
+	type:String,
+	required:true
     }
 })
 
