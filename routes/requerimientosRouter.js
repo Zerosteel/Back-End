@@ -4,7 +4,7 @@ const Requerimientos = require('../models/requerimientosModel')
 
 router.get('/', async (req,res)=>{
     try {
-        const requerimiento = await Requerimientos.find()
+        const requerimiento = await Requerimientos.find()        
         res.json(requerimiento)
     } catch (error) {
         res.status(500).json({message:err.message})

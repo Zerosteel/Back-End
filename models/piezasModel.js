@@ -3,8 +3,8 @@ const mongoose = require ('mongoose')
 const piezasSchema = new mongoose.Schema({
     
     NombreInterno:{
-        type:String, 
-        required:true
+        type:String,
+        required:false
     },
     /* Archivo:{
         type:String,
