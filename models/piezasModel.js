@@ -1,48 +1,52 @@
 const mongoose = require ('mongoose')
 
-const piezasSchema = new mongoose.Schema({
+ const piezasSchema = new mongoose.Schema({
     
-    NombreInterno:{
+    nombreInterno:{
         type:String,
         required:false
     },
-    /* Archivo:{
+    archivo:{
         type:String,
-        required:true
-    }, */
-    Calibre:{
+        required:false
+    }, 
+    
+    calibre:{
         type:String,
         required:true
     }, 
-    Material:{
+    material:{
         type:String,
         required:true
     }, 
-    /* Tipo:{
+    tipo:{
         type:String,
-        required:true
-    },  */
-    PPB:{
+        required:false
+    },  
+    ppb:{
         type:Number,
         required:false
     }, 
-    /* undefined:{
+    blankSize:{
         type:String,
         required:false
-    },  */
-    golpesporpieza:{
+    },  
+    golpesPorPieza:{
         type:Number,
         required:false
     }, 
-    tiempoestimado:{
+    tiempoEstimado:{
         type:Number,
         required:false
     }, 
-    PiezaNum:{
+    piezaNum:{
         type:Number,
         required:true
-    }
+    } 
     
 })
+ 
 
-module.exports = mongoose.model('Piezas',piezasSchema)
+
+
+module.exports = mongoose.model('piezas',piezasSchema)

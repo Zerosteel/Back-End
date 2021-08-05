@@ -6,6 +6,7 @@ const inventarioRouter = require('./routes/inventarioRouter');
 const piezasRouter = require('./routes/piezasRouter')
 const ordenesCRouter = require('./routes/ordenesCRouter')
 const requerimientosRouter = require('./routes/requerimientosRouter')
+const ordenesTRouter = require('./routes/oTrabajoRouter');
 
 //Creacion de servidor
 const app = express()
@@ -15,6 +16,7 @@ app.use('/api/inventario',inventarioRouter)
 app.use('/api/piezas',piezasRouter)
 app.use('/api/ordenesCompra',ordenesCRouter)  
 app.use('/api/requerimientos',requerimientosRouter) 
+app.use('/api/ordenesTrabajo',ordenesTRouter)
 app.listen(3000,()=> console.log("Servidor Iniciado"));
 
 //Connexion a la base de datos

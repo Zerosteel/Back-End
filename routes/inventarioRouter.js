@@ -23,6 +23,7 @@ router.post('/', async (req,res) =>{
     })
 
     try {
+        
         const newInventario = await inventario.save()
         res.status(201).json(newInventario)
     } catch (err) {
