@@ -32,4 +32,19 @@ router.post('/', async (req,res) =>{
 
 })
 
+router.get('/:cantidad', async (req,res)=>{
+    let inv    
+    try {
+        inv = await Inventario.find({"cantidad" : req.params.cantidad})
+        if(inv===null){
+            return res.status(404).json({message:"No se encontro el material solicitado"})
+        }
+    } catch (err) {
+        return res.status(500).json({message:err.message})
+    }
+
+    res.json(inv)
+
+})
+
 module.exports = router

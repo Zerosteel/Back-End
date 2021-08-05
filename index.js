@@ -20,8 +20,8 @@ app.use('/api/ordenesTrabajo',ordenesTRouter)
 app.listen(3000,()=> console.log("Servidor Iniciado"));
 
 //Connexion a la base de datos
-//const url = 'mongodb://localhost/KbManufacturing';
-const url = 'mongodb://localhost/kbmanufacturing';
+const url = 'mongodb://localhost/KbManufacturing';
+//const url = 'mongodb://localhost/kbmanufacturing';
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error',(error) => console.error(error));

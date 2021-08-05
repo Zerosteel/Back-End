@@ -15,7 +15,7 @@ router.get('/', async (req,res) => {
 })
 
 router.post('/', async (req,res) =>{
-    
+    //TODO editarlo para que en lugar de una pieza por orden de compra sea un arreglo
     const ordenesDeCompra= new OrdenesDeCompra({
         line:             req.body.line,
         partNumber:       req.body.partNumber,
