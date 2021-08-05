@@ -64,3 +64,13 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/api/ordenesCompra
+
+###
+POST http://localhost:3000/api/piezas
+Content-Type: application/json
+
+{
+    "nombreCliente":"Exacolor",
+    "piezaNum":105,
+    "ppb":16
+}

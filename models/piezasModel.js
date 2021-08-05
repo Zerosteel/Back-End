@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose')
 
- const piezasSchema = new mongoose.Schema({
+ /*const piezasSchema = new mongoose.Schema({
     
     nombreInterno:{
         type:String,
@@ -44,9 +44,22 @@ const mongoose = require ('mongoose')
         required:true
     } 
     
-})
+})*/
  
-
+const piezasSchema = new mongoose.Schema({
+    nombreCliente:{
+        type:String,
+        required:true
+    },
+    piezaNum:{
+        type:Number,
+        required:true
+    },
+    ppb:{
+        type:Number,
+        required:true
+    }
+})
 
 
 module.exports = mongoose.model('piezas',piezasSchema)
