@@ -12,7 +12,7 @@ const clientesSchema = new mongoose.Schema({
     direccion:{
         type:String,
         required:true
-    },
+    }, 
     telefono:{
         type:String,
         required:true

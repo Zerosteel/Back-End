@@ -12,6 +12,9 @@ router.get('/', async (req,res)=>{
 
 router.post('/', buscarOC, buscarPieza,  async (req,res)=>{
 
+    /*
+    crea un archivo excel a partir de un JSON
+
     var json = [{
         foo: 'bar',
         qux: 'moo',
@@ -27,7 +30,7 @@ router.post('/', buscarOC, buscarPieza,  async (req,res)=>{
     
     var xls = json2xls(json);
     
-    fs.writeFileSync('data.xlsx', xls, 'binary');
+    fs.writeFileSync('data.xlsx', xls, 'binary'); */
  
 
 
