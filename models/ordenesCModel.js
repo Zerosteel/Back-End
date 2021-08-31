@@ -5,9 +5,9 @@ const ordenesCSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    partNumber:         {
+    partNumbers:         {
         //TODO cambiar el typo de unico a uno de tipo arreglo
-        type:Number,
+        type:[Number],
         required:true
     },
     description:        {
