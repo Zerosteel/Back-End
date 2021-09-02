@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
 const ordenesCSchema = new mongoose.Schema({
+    cliente: {
+        type:String,
+        required:true
+    },
     line:               {
         type:Number,
         required:true
